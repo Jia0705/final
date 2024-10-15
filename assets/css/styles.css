@@ -1,0 +1,54 @@
+body {
+    color: #333333;
+}
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.btn-outline-dark{
+    color:white;
+    background-color: #ff5722;
+}
+
+/* overlay */
+.image-box {
+    position: relative; /* Set the parent container to relative positioning */
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-box img {
+    display: block; /* Ensures no extra space around the image */
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute; /* Position it absolutely within the parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Centers content inside */
+    justify-content: center;
+    align-items: center;
+    background: rgba(29, 118, 153, 0.5); /* Semi-transparent background */
+    color: white;
+    opacity: 0; /* Hide overlay by default */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .image-box:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+
+  .butt{
+    background-color: #ff5722;
+    border-radius: 5px;
+    color: white;
+    border: none;
+  }
+
